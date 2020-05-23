@@ -17,8 +17,7 @@ app.use('/', indexRouter);
 app.use('/search', searchRouter);
 app.use('/user', userRouter);
 
-// app.listen(process.env.PORT || 8081);
-app.listen(8081);
+app.listen(process.env.PORT || 8081);
 
 
 console.log("Server started!");

@@ -13,14 +13,7 @@ import 'firebase/auth';
 require('./css/GoogleMap.css')
 
 const config = {
-  apiKey: "AIzaSyAiGOmMdhCfFO7WarBrKRN4hIJNZtHrFNI",
-  authDomain: "yelp-e2d86.firebaseapp.com",
-  databaseURL: "https://yelp-e2d86.firebaseio.com",
-  projectId: "yelp-e2d86",
-  storageBucket: "yelp-e2d86.appspot.com",
-  messagingSenderId: "420728584362",
-  appId: "1:420728584362:web:cf214dd7650f01b265b8d3",
-  measurementId: "G-XVB4ZR477Z"
+//  add your own Google Firebase config here
 }
 
 firebase.initializeApp(config);
@@ -32,7 +25,7 @@ export const loadedGoogleMapsAPI = new Promise( (resolve, reject) => {
 
   let GMap = document.createElement('script');
 
-  GMap.setAttribute('src', `https://maps.googleapis.com/maps/api/js?key=AIzaSyD5Q8oybSD0wer73pAY1RhHCQ4sW9WeUo8&callback=GoogleMapsInit`);
+  GMap.setAttribute('src', `https://maps.googleapis.com/maps/api/js?key=YOURGOOGLEMAPAPIKEY`);
 
   let GMapCluster = document.createElement('script');
   GMapCluster.setAttribute('src', 'https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js');

@@ -1,7 +1,7 @@
 // The Yelp controller, which talks to the Yelp Fusion API and fetch corresponding data
 
 const yelp = require('yelp-fusion');
-const client = yelp.client("pWYWa1UKyS1-RUKYJEVnBxhe00i0lNUH2KoY4qKjPBhe3-sCr7Ef9rv6e5tTEy8-OJ_X4N1VxYCj60t2d_9rAqLTcoZlwtvkkGMumedC6mskNmku1TrYEE0wkWbeW3Yx");
+const client = yelp.client("YOUR_YELP_FUSION_API_KEY");
 
 const QUERY = new Set(['term', 'location', 'latitude', 'longitude', 'radius', 'categories',
     'locale', 'limit', 'offset', 'sort_by', 'price', 'open_now', 'open_at', 'attributes']);

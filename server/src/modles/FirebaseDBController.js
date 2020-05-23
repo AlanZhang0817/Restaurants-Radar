@@ -1,8 +1,8 @@
 // The FireBaseController, which talks to the Firebase and manipulate the data based on the action
 
 const firebase = require('firebase-admin');
-const serviceAccount = require('../yelp-e2d86-firebase-adminsdk-z4185-f57794f8c0.json');
-const firebaseName = "yelp-e2d86";
+const serviceAccount = require('YOUR_GOOGLE_FIREBASE_JSON');
+const firebaseName = "YOUR_FIREBASE_NAME";
 
 firebase.initializeApp({
     credential: firebase.credential.cert(serviceAccount),
